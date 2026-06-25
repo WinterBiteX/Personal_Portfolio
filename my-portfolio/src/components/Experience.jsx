@@ -11,7 +11,7 @@ export default function Experience() {
           {/* <h2 className="sec-title">Experience</h2> */}
           <LiquidTitle text="Experience" />
           <p className="sec-sub">
-            Roles where I've worked  — from autonomous drones to full-stack web applications.
+            Roles where I've worked  — from full-stack web applications to autonomous drones.
           </p>
         </Anim>
 
