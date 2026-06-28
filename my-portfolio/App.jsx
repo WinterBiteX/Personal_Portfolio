@@ -18,7 +18,6 @@ export default function App() {
   const goTo = (id) => {
     setActive(id);
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
-    // block scroll spy for 1 second while smooth scroll completes
     setTimeout(() => {}, 1000);
   };
 
@@ -28,8 +27,8 @@ export default function App() {
     let scrollTimer = null;
 
     const handler = () => {
-        if (isScrolling) return; // don't override while programmatic scroll is happening
-        const scrollY = window.scrollY + window.innerHeight / 2; // use middle of viewport
+        if (isScrolling) return;
+        const scrollY = window.scrollY + window.innerHeight / 2;
         let current = ids[0];
         for (const id of ids) {
         const el = document.getElementById(id);

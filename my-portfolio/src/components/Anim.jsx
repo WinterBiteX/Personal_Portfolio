@@ -1,4 +1,3 @@
-// Wraps any content with a scroll-triggered fade-up animation
 import { useEffect, useRef } from "react";
 
 export default function Anim({ children, delay = "" }) {
